@@ -26,7 +26,7 @@ print('Queden un total de %d dies fins a la fi del projecte' %dies.days)
 #Iniciem càlcul de setmanes
 #Dividim els dies restatns entre 7
 setmanes = (dies.days) / 7
-#Convertim el resultat a nombre integre
+#Convertim el resultat a nombre enter
 intSetmanes = int(setmanes)
 #print (intSetmanes)
 
