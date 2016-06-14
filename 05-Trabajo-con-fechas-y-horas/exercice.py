@@ -1,3 +1,6 @@
+#coding:windows-1252
+#La linia superior prepara el sistema per a caràcters especials, encara que estigui comentada
+
 #Importem la classe locale i l'idioma del sistema
 import locale
 locale.setlocale(locale.LC_ALL, '')
@@ -9,7 +12,7 @@ import datetime
 dataActual = datetime.date.today()
 
 #Preguntem a l'usuari per la data límit del projecte.
-userInput = input('Si us plau, indiqui la data limit del projecte (dd/mm/yyyy): ')
+userInput = input('Si us plau, indiqui la data límit del projecte (dd/mm/yyyy): ')
 
 #Convertim la resposta de l'usuari en una data
 fiProjecte = datetime.datetime.strptime(userInput, '%d/%m/%Y').date()
@@ -27,12 +30,15 @@ setmanes = (dies.days) / 7
 intSetmanes = int(setmanes)
 #print (intSetmanes)
 
-#calculem el dies restants a les setmanes
+#calculem el dies restants a les setmanes, el % significa Módulo o mòdul
 dies = (dies.days)%7
 intDies = int(dies)
 #print(intDies)
 
 #Motrem resultats en dies i setmanes
-print('Aixo suposen untotal de {0:d} setmanes i {1:d} dies'.format (intSetmanes,intDies))
+print('Això suposen un total de {0:d} setmanes i {1:d} dies'.format (intSetmanes,intDies))
 #El mateix però amb un altre format
-print('Aixo suposen untotal de 1%d setmanes i 2%d dies' %(intSetmanes,intDies))
+print('Això suposen un total de 1%d setmanes i 2%d dies' %(intSetmanes,intDies))
+
+
+
