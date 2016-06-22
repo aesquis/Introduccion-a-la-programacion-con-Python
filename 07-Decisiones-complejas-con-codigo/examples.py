@@ -8,3 +8,5 @@ elif country == "GERMANY" :
     print("Guten Tag")
 elif country == "FRANCE" :
     print("Bonjour")
+else :
+    print("You are a " + country + " loser")
