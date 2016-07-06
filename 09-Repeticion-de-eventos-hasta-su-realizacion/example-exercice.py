@@ -22,7 +22,8 @@ colorLine = "black"
 angleLine = 0
 
 #Consultem
-midaLine = int(input("Allagada de la linia ? "))
+#E l .lower() es per convertir tots els caracters del nom de color en minuscules i que no dongui error
+midaLine = input("Allagada de la linia ? ")
 colorLine = (input("Color de la linia ? ")).lower()
 angleLine = int(input("Angle de la linia ? "))
 
