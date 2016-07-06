@@ -35,8 +35,9 @@ while midaLine != 0:
     turtle.forward(midaLine)
     #Tornem a preguntar perque no s'executi infinitament
     midaLine = int(input("Allagada de la linia ? "))
+    #Fem un condicional
     if midaLine != 0 :
         colorLine = (input("Color de la linia ? ")).lower()
         angleLine = int(input("Angle de la linia ? "))
-
+#Missatge final si posem un 0
 print("Genial nano, ho has muntat molt be")
