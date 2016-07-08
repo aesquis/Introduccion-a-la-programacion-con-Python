@@ -6,6 +6,7 @@ READ = 'r'
 APPEND = 'a'
 READWRITE = 'w+'
 
+#Defineixo variables
 nomConv = ('')
 nombre = 1
 
@@ -14,10 +15,11 @@ print('Entra el nom i edat de cada un dels convidats\n')
 #Mentre la variable nomConv sigui diferent de FI s'executa el loop
 while nomConv != 'FI':
     nomConv = input('Nom %d: ' %nombre)
-    edat = input('Edat: ')
-    strNombre = str(nombre)
-    file.write(strNombre)
-    file.write('; ' + nomConv +'; '+ edat + '\n')
-    nombre = nombre ++ 1
+    if nomConv != 'FI':
+        edat = input('Edat: ')
+        strNombre = str(nombre)
+        file.write(strNombre)
+        file.write('; ' + nomConv +'; '+ edat + '\n')
+        nombre = nombre ++ 1
 print('Llista completada correctament')
 file.close()
