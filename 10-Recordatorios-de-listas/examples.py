@@ -77,3 +77,27 @@
 #Si crequem un valor que no existeix el programa peta
 guests = ['Christopher','Susan','Bill','Satya']
 print(guests.index('Bill'))
+#----------------------------------------------------
+##Processar la llista amb un loop
+#guests = ['Christopher','Susan','Bill','Satya']
+#for steps in range(4):
+#    print(guests[steps])
+#----------------------------------------------------
+##Utilitzar la funcio len per saber quans elements hi ha en una llista
+#guests = ['Christopher','Susan','Bill','Satya']
+##Buscar quantes entrades té la llista
+#nbrEntrades = len(guests)
+##Creacio del loop
+#for registres in range(nbrEntrades):
+#    print(guests[registres])
+#----------------------------------------------------
+##Una altre manera de mostrar la llista
+#guests = ['Christopher','Susan','Bill','Satya']
+#for guest in guests:
+#    print(guest)
+#----------------------------------------------------
+#Ordenar els elements d'una llista
+guests = ['Christopher','Susan','Bill','Satya']
+guests.sort()
+for guest in guests:
+    print(guest)
